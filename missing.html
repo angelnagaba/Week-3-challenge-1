@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <link rel="text/stylesheet" src="missing.css">
+    </title>
+</head>
+
+<body style="background-color:honeydew">
+    <div id="missing">
+        <script type="text/javascript">
+            var a = [1, 2, 3, 4, 7, 10];
+            var i = 0,
+                count = 10;
+
+            var missing = new Array();
+
+            for (i = 0; i <= count; i++) {
+                if (a.indexOf(i) == -1) {
+                    missing.push(i);
+                }
+            }
+            document.getElementById("missing").innerHTML = "The missing values are:" + "</br>" + "[" + missing + "]";
+            //  window.alert("The missing values are:" + missing); // to check the result.
+        </script>
+    </div>
+</body>
+
+</html>
